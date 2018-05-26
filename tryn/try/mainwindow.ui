@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>786</width>
+    <height>633</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>786</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件（&amp;F）</string>
+    </property>
+    <addaction name="actionNEW"/>
+    <addaction name="actionSAVE"/>
+    <addaction name="actionOPEN"/>
+    <addaction name="separator"/>
+    <addaction name="actionEXIT"/>
+   </widget>
+   <widget class="QMenu" name="menuAsdf_G">
+    <property name="title">
+     <string>字体(&amp;W)</string>
+    </property>
+    <addaction name="actionSadfas"/>
+    <addaction name="actionDfgdfh"/>
+   </widget>
+   <widget class="QMenu" name="menuAsdfasdf_G">
+    <property name="title">
+     <string>编辑(G&amp;)</string>
+    </property>
+    <addaction name="actionPaste_Ctrl_P"/>
+    <addaction name="actionAll_Ctrl_A"/>
+    <addaction name="actionDelete_Ctrl_D"/>
+    <addaction name="separator"/>
+    <addaction name="actionConcel_Ctrl_C"/>
+    <addaction name="actionFind_Ctrl_F"/>
+    <addaction name="separator"/>
+    <addaction name="actionShear_Ctrl_S"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助（&amp;H)</string>
+    </property>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menuAsdf_G"/>
+   <addaction name="menuAsdfasdf_G"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="separator"/>
+   <addaction name="actionBold"/>
+   <addaction name="actionLean"/>
+   <addaction name="actionUnderline"/>
+   <addaction name="separator"/>
+   <addaction name="actionCut"/>
+   <addaction name="actionCopy"/>
+   <addaction name="actionPaste"/>
+   <addaction name="separator"/>
+   <addaction name="actionBack"/>
+   <addaction name="actionGo"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionOPEN">
+   <property name="text">
+    <string>Open                   (&amp;Ctrl+O)</string>
+   </property>
+  </action>
+  <action name="actionSAVE">
+   <property name="text">
+    <string>Save                     (&amp;Ctrl+S)</string>
+   </property>
+  </action>
+  <action name="actionSadfas">
+   <property name="text">
+    <string>Bold      (&amp;Ctrl+B)</string>
+   </property>
+  </action>
+  <action name="actionDfgdfh">
+   <property name="text">
+    <string>Italic      (&amp;Ctrl+I)</string>
+   </property>
+  </action>
+  <action name="action_Ctrl_N">
+   <property name="text">
+    <string>(&amp;Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionEXIT">
+   <property name="text">
+    <string>Exit                       (&amp;Ctrl+E)</string>
+   </property>
+  </action>
+  <action name="actionPaste_Ctrl_P">
+   <property name="text">
+    <string>Paste         (&amp;Ctrl+P)</string>
+   </property>
+  </action>
+  <action name="actionAll_Ctrl_A">
+   <property name="text">
+    <string>All              (&amp;Ctrl+A)</string>
+   </property>
+  </action>
+  <action name="actionDelete_Ctrl_D">
+   <property name="text">
+    <string>Delete       (&amp;Ctrl+D)</string>
+   </property>
+  </action>
+  <action name="actionConcel_Ctrl_C">
+   <property name="text">
+    <string>Concel       (&amp;Ctrl+C)</string>
+   </property>
+  </action>
+  <action name="actionFind_Ctrl_F">
+   <property name="text">
+    <string>Find            (&amp;Ctrl+F)</string>
+   </property>
+  </action>
+  <action name="actionShear_Ctrl_S">
+   <property name="text">
+    <string>Shear        (&amp;Ctrl+S)</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/iconimage/filenew.png</normaloff>:/iconimage/filenew.png</iconset>
+   </property>
+   <property name="text">
+    <string>new</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/iconimage/fileopen.png</normaloff>:/iconimage/fileopen.png</iconset>
+   </property>
+   <property name="text">
+    <string>open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/iconimage/filesave.png</normaloff>:/iconimage/filesave.png</iconset>
+   </property>
+   <property name="text">
+    <string>save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionBold">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/iconimage/textbold.png</normaloff>:/iconimage/textbold.png</iconset>
+   </property>
+   <property name="text">
+    <string>bold</string>
+   </property>
+  </action>
+  <action name="actionLean">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/iconimage/textitalic.png</normaloff>:/iconimage/textitalic.png</iconset>
+   </property>
+   <property name="text">
+    <string>lean</string>
+   </property>
+  </action>
+  <action name="actionUnderline">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/iconimage/textunder.png</normaloff>:/iconimage/textunder.png</iconset>
+   </property>
+   <property name="text">
+    <string>underline</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/iconimage/editcut.png</normaloff>:/iconimage/editcut.png</iconset>
+   </property>
+   <property name="text">
+    <string>cut</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/iconimage/editcopy.png</normaloff>:/iconimage/editcopy.png</iconset>
+   </property>
+   <property name="text">
+    <string>copy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/iconimage/editpaste.png</normaloff>:/iconimage/editpaste.png</iconset>
+   </property>
+   <property name="text">
+    <string>paste</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionBack">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/iconimage/editundo.png</normaloff>:/iconimage/editundo.png</iconset>
+   </property>
+   <property name="text">
+    <string>back</string>
+   </property>
+  </action>
+  <action name="actionGo">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/iconimage/editredo.png</normaloff>:/iconimage/editredo.png</iconset>
+   </property>
+   <property name="text">
+    <string>go</string>
+   </property>
+  </action>
+  <action name="actionNEW">
+   <property name="text">
+    <string>New                    (&amp;Ctrl+N)</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
